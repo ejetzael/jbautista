@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+ 
+    <title>Mundo | Producto</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/hover.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- zoom -->
+    <script type='text/javascript' src='js/jquery.jqzoom-1.0.1.js'></script>
+    <script type='text/javascript' src='js/zoom.js'></script>
+</head>
+
+<body>
+    <header class="manaim">
+        <section class="cd-dropdown-wrapper">
+          <a class="cd-dropdown-trigger" href="#0"><span class="fonte-icon fontello-compass"></span>&nbsp;MENU</a>
+        <nav class="cd-dropdown">
+          <h2>MENU</h2>
+          <a href="#0" class="cd-close">Close</a>
+          <ul class="cd-dropdown-content">
+            <li>
+              <form class="cd-search">
+                <span class="glyphicon glyphicon-zoom-in"></span><input type="search" placeholder="Busqueda...">
+              </form>
+            </li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="cd-divider">---</li>
+            <li class="has-children">
+              <a href="#">Categorias</a>
+
+              <ul class="cd-secondary-dropdown is-hidden">
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <li class="see-all"><a href="#">All Clothing</a></li>
+                <li class="has-children">
+                  <a href="#">Esimulación</a>
+
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Clothing</a></li>
+                    <li class="see-all"><a href="#">All Accessories</a></li>
+                    <li class="has-children">
+                      <a href="#0">Beanies</a>
+
+                      <ul class="is-hidden">
+                        <li class="go-back"><a href="#0">Accessories</a></li>
+                        <li class="see-all"><a href="#">All Benies</a></li>
+                        <li><a href="#">Caps &amp; Hats</a></li>
+                        <li><a href="#">Gifts</a></li>
+                        <li><a href="#">Scarves &amp; Snoods</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a href="#0">Caps &amp; Hats</a>
+
+                      <ul class="is-hidden">
+                        <li class="go-back"><a href="#0">Accessories</a></li>
+                        <li class="see-all"><a href="#">All Caps &amp; Hats</a></li>
+                        <li><a href="#">Beanies</a></li>
+                        <li><a href="#">Caps</a></li>
+                        <li><a href="#">Hats</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Glasses</a></li>
+                    <li><a href="#">Gloves</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Scarves</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <a href="#">Juegos de Destreza</a>
+
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Clothing</a></li>
+                    <li class="see-all"><a href="#">All Bottoms</a></li>
+                    <li><a href="#">Casual Trousers</a></li>
+                    <li class="has-children">
+                      <a href="#0">Jeans</a>
+
+                      <ul class="is-hidden">
+                        <li class="go-back"><a href="#0">Bottoms</a></li>
+                        <li class="see-all"><a href="#">All Jeans</a></li>
+                        <li><a href="#">Ripped</a></li>
+                        <li><a href="#">Skinny</a></li>
+                        <li><a href="#">Slim</a></li>
+                        <li><a href="#">Straight</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#0">Leggings</a></li>
+                    <li><a href="#0">Shorts</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <a href="#">Jackets</a>
+
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Clothing</a></li>
+                    <li class="see-all"><a href="#">All Jackets</a></li>
+                    <li><a href="#">Blazers</a></li>
+                    <li><a href="#">Bomber jackets</a></li>
+                    <li><a href="#">Denim Jackets</a></li>
+                    <li><a href="#">Duffle Coats</a></li>
+                    <li><a href="#">Leather Jackets</a></li>
+                    <li><a href="#">Parkas</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <a href="#">Tops</a>
+
+                  <ul class="is-hidden">
+                    <li class="go-back"><a href="#0">Clothing</a></li>
+                    <li class="see-all"><a href="#">All Tops</a></li>
+                    <li><a href="#">Cardigans</a></li>
+                    <li><a href="#">Coats</a></li>
+                    <li><a href="#">Polo Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li class="has-children">
+                      <a href="#0">T-Shirts</a>
+
+                      <ul class="is-hidden">
+                        <li class="go-back"><a href="#0">Tops</a></li>
+                        <li class="see-all"><a href="#">All T-shirts</a></li>
+                        <li><a href="#">Plain</a></li>
+                        <li><a href="#">Print</a></li>
+                        <li><a href="#">Striped</a></li>
+                        <li><a href="#">Long sleeved</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Vests</a></li>
+                  </ul>
+                </li>
+              </ul> <!-- .cd-secondary-dropdown -->
+            </li> <!-- .has-children -->
+
+            <li class="has-children">
+              <a href="#">Gallery</a>
+
+              <ul class="cd-dropdown-gallery is-hidden">
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <li class="see-all"><a href="#">Browse Gallery</a></li>
+                <li>
+                  <a class="cd-dropdown-item" href="#">
+                    <img src="http://placehold.it/500x333" alt="Product Image">
+                    <h3>Product #1</h3>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item" href="#">
+                    <img src="http://placehold.it/500x333" alt="Product Image">
+                    <h3>Product #2</h3>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item" href="#">
+                    <img src="http://placehold.it/500x333" alt="Product Image">
+                    <h3>Product #3</h3>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item" href="#">
+                    <img src="http://placehold.it/500x333" alt="Product Image">
+                    <h3>Product #4</h3>
+                  </a>
+                </li>
+              </ul> <!-- .cd-dropdown-gallery -->
+            </li> <!-- .has-children -->
+
+            <li class="has-children">
+              <a href="#">Services</a>
+              <ul class="cd-dropdown-icons is-hidden">
+                <li class="go-back"><a href="#0">Menu</a></li>
+                <li class="see-all"><a href="#">Browse Services</a></li>
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #1</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #2</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <h3>Service #3</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #4</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #5</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #6</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #7</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #8</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item " href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #9</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item 0" href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #10</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item 1" href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #11</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="cd-dropdown-item 2" href="#">
+                    <span class="glyphicon glyphicon-signal"></span>
+                    <h3>Service #12</h3>
+                    <p>This is the item description</p>
+                  </a>
+                </li>
+
+              </ul> <!-- .cd-dropdown-icons -->
+            </li> <!-- .has-children -->
+          </ul> <!-- .cd-dropdown-content -->
+        </nav> <!-- .cd-dropdown -->
+    </section> <!-- .cd-dropdown-wrapper -->
+    <section class="yeah">
+      <aside class="targaryen">
+        <ul>
+          <li><a href="#" class="hvr-bubble-float-bottom"><span class="fonte-icon fontello-share"></span></a>
+            <ul>
+              <li> 
+                <a href="#" class="hvr-grow-shadow btn btn-md">
+                  |<span class="fonte-icon fontello-facebook-official" aria-hidden="true"></span>Facebook
+                </a>
+              </li>
+              <li><a href="#" class="hvr-grow-shadow btn btn-md">|<span class="fonte-icon fontello-gplus"></span>Google Plus </a></li>
+              <li><a href="#" class="hvr-grow-shadow btn btn-md">|<span class="fonte-icon fontello-twitter"></span>Twitter</a>
+              <li><a href="#" class="hvr-grow-shadow btn btn-md">|<span class="fonte-icon fontello-search"></span>Buscar</a>
+                <ul class="hvr-grow-shadow">
+                  <li>
+                    <div class="input-group">
+                      <input class="form-control daenis" type="text" placeholder="buscar...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+    </section>
+    </header>
+
+    <article id="totalidad" role="main" data-role="main" data-template="single">
+        <div class="page-header h-mundoC">
+          <h1>Productos <small>Subtitulo</small></h1>
+        </div>
+        <main class="luigi">
+
+          <article class="wrapper container">
+            <header class="productivity">
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#" class="hvr-overline-from-center">Estimulacion temprana <span class="badge">42</span></a></li>
+                      <li><a href="#" class="hvr-overline-from-center">Juegos de destreza <span class="badge">10</span></a></li>
+                      <li><a href="#" class="hvr-overline-from-center">Juegos de mesa <span class="badge">50</span></a></li>
+                      <li><a href="#" class="hvr-overline-from-center">Manualidades <span class="badge">18</span></a></li>
+                      <li><a href="#" class="hvr-overline-from-center">Otros <span class="badge">42</span></a></li>
+                      <li><a href="#">Rompecabezas <span class="badge">44</span></a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Set Armables <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Duplo</a></li>
+                          <li><a href="#">Lego</a></li>
+                          <li><a href="#">Multiples</a></li>
+                          <li><a href="#">Nanoblocks</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav><!-- end nav -->
+            </header>
+
+            <section class="row">
+              <div class="col-lg-12 matwor">
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+              </div><!-- matwor -->
+
+              <div class="col-lg-12 matwor">
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="" class="hvr-overline-from-left">
+                    <figure class="text-center">
+                      <img src="http://placehold.it/500x333" alt="">
+                      <figcaption class="hvr-shrink">Batman: El Ataque de Man-Bat</figcaption>
+                      <p>76011-Lego  Super Heroes</p>
+                      <big class="btn btn-info">$399.00</big>
+                    </figure>
+                  </a>
+                </div>
+              </div><!-- matwor -->
+              <aside class="col-lg-12 net-pg">
+                <nav>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </aside>
+            </section>
+             
+          </article> <!-- wrapper -->
+ 
+          <footer>
+            <article class="container">
+              <section class="col-lg-12 datainfo">
+                <div class="col-md-6 col-xs-12 text-left">
+                  <h3>Contacto</h3>
+                  <div>
+                    <ul class="list-unstyled">
+                      <li><a href="" class="hvr-sweep-to-right"><span class="glyphicon glyphicon-envelope"></span> info@elmundodelacreatividad.com</a></li>
+                      <li><span class="glyphicon glyphicon-earphone"></span> Tel. (55) 6994 7864 de lunes a domingo de 10:00 a 20:00 hrs</li>
+                      <li><address><span class="glyphicon glyphicon-home"></span> Dir. Av. Municipio Libre No 83 Col. Banjidal, CP 09450 Local 23 en Plaza Cascada</address></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 text-right">
+                  <h3>Social</h3>
+                    <div>
+                      <ul class="list-unstyled footer-social">
+                        <li><a href="" class="hvr-pulse-grow">facebook <span class="fonte-icon fontello-facebook-official"></span></a></li>
+                        <li><a href="" class="hvr-pulse-grow">Google Plus <span class="fonte-icon fontello-gplus"></span></a></li>
+                        <li><a href="" class="hvr-pulse-grow">Twitter <span class="fonte-icon fontello-twitter"></span></a></li>
+                        <li><a href="" class="hvr-pulse-grow">Buscar <span class="fonte-icon fontello-search"></span></a></li>
+                      </ul>
+                    </div>
+                </div>
+              </section> <!-- datainfo -->
+              <div class="clearfix"></div>
+              <hr>
+          
+              <section class="col-lg-12 datainfo">
+                <div class="col-md-6 col-xs-12 text-left">
+                  <div>
+                    <ul class="list-unstyled">
+                      <li>Copyright © <a href="" class="hvr-sweep-to-right"><span class="glyphicon glyphicon-globe"></span> www.elmundodelacreatividad.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 text-right">
+                    <div>
+                      <ul class="list-unstyled">
+                        <li><a href="" class="hvr-sweep-to-right"><span class="glyphicon glyphicon-book"></span> Politicas de privacidad</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </section> <!-- datainfo -->
+            </article>
+          </footer>
+          <article class="extras">
+            
+          </article>
+        </main> <!-- luigi -->
+    </article>
+    <script src="js/bootstrap.js"></script> 
+
+    <!-- menu aim -->
+    <script src="js/jquery.menu-aim.js"></script>
+    <script src="js/menuaim.js"></script>
+
+</body>
+
+</html>

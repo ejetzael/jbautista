@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>demographics Helios</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="ui/css/kendo.common.min.css" />
+	    <link rel="stylesheet" href="ui/css/blueopal.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    	<script src="ui/js/kendo.all.min.js"></script>
+	</head>
+	<body>
+		<header class="maximusMenu">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li><a class="the-icon the-icon-prev" href="javascript:history.back();"><span>Back</span></a></li>
+				<li>
+					<div class="btn-group infoUser">
+					  <button type="button" class="btn">
+					  	<a class="perfil" href=" ">
+							<span class="picusr"><img src="images/user.png" alt=""></span>
+							<span class="name"> Meghan Schmidt</span>
+						</a>
+					  </button>
+					  <button type="button" class="btn btn-info dropdown-toggle senti" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Action</a></li>
+					    <li><a href="#">Another action</a></li>
+					    <li><a href="#">Something else here</a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a href="#">Separated link</a></li>
+					  </ul>
+					</div>
+				</li>
+				<li><a href="dashb.html" class="navbar-brand"><img src="images/logo_helios.png" alt="Brand"></a></li>
+				<li><a href="dashb.html" class=" "><span class="glyphicon glyphicon-home"></span> </a></li>
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span class="glyphicon glyphicon-upload"></span><span>Search</span> </a>
+								</li>
+								<li><a href="" class="gn-icon gn-icon-cog">Demographics</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Questionnaires</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Appointments</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Future Appointmets</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Messages</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Contact Us</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Lab Result</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Medications</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Pay Open Bill</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Visit´s History</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Hand Outs</a></li>
+								<li><a href="authorizedform.html" class="gn-icon gn-icon-cog">Authorized form</a></li>
+								<li><a href="" class="gn-icon gn-icon-cog">Amendments</a></li>
+								
+								<!-- <li>
+									<a class="gn-icon gn-icon-cog">Archives</a>
+									<ul class="gn-submenu">
+										<li><a class="gn-icon gn-icon-cog">Images</a></li>
+										<li><a class="gn-icon gn-icon-cog">Videos</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</div> 
+					</nav>
+				</li>
+			</ul>
+		
+			<nav class="navbar navbar-default menuAlternativo">
+			  <div class="container-fluid">
+			  	<div class="progress progress-striped active">
+				  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width: 90%"></div>
+				</div>
+
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav pauhl">
+					<li><a href="#"><span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="Help"></span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-print"></span></a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right ">
+			      
+			        <li><a href="#"><span class="glyphicon glyphicon-remove-sign ladyBug"></span></a></li>
+			      </ul>
+			    </div> 
+			    
+			  </div> 
+			</nav>
+		</header>
+		<main class="great">
+			 
+			<article class="pgsLetter">
+				<section class="container">
+					<div class="row">
+						<div class="hoja">
+							<hr>
+							<section class="col-lg-12">
+								<div class="demo-section k-content">
+				                        <div id="tabstrip">
+				                            <ul>
+				                                <li class="k-state-active">General Information</li>
+				                                <li>Address</li>
+				                                <li>Notes</li>
+				                            </ul>
+				                            <div class="tab1">
+				                                <div class="col-sm-12 sinpadding">
+													
+												    <div class="demo-section k-content col-md-4">
+												        <h3 class="hms">Photo</h3>
+												        <abbr class="hmsX">
+												        	<a href="#" class="thumbnail">
+														      <img src="images/user.png" alt="example">
+														    </a>
+														    <ul class="fieldlist list-inline">
+														    	<li>
+														    		<input type="checkbox" id="eq3" class="k-checkbox">
+										          					<label class="k-checkbox-label" for="eq3">Delete</label>
+														    	</li>
+														    	<li>
+														    		<button class="k-button">Select...</button>
+														    	</li>
+														    	<li></li>
+														    </ul>
+												        </abbr>
+												    </div>
+												    <div class="demo-section k-content col-md-8">
+												        <h3 class="hms">General Information</h3>
+											        	<abbr class="hmsX">
+											        	<ul class="forms">
+												            <li>
+												                <label>First Name</label>
+												                <input type="text" name="firstName" value="" class="k-textbox" style="width: 100%;" />
+												            </li>
+												            <li>
+												                <label>Last Name</label>
+												                <input type="text" name="lastName" value="" class="k-textbox" style="width: 100%;" />
+												            </li>
+												            <li>
+												                <label>Birthday</label>
+												                <input id="birthdayInput" type="date" name="birthday" value="" style="width: 100%;" />
+												            </li>
+												            <li>
+												                <label>Gender</label>
+												                <select id="genderInput" name="gender" style="width: 100%;">
+												                    <option value="male" selected>Male</option>
+												                    <option value="female">Female</option>
+												                    <option value="notsay">Rather not say</option>
+												                </select>
+												            </li>
+												            <li>
+												                <label>Occupation</label>
+												                <input type="text" name="occupation" value="Software Developer" class="k-textbox" style="width: 100%;" />
+												            </li>
+												        </ul>
+											        	</abbr>
+											    	</div>
+											    	<script>
+												        $(document).ready(function () {
+												            var pb = $("#profileCompleteness").kendoProgressBar({
+												                type: "chunk",
+												                chunkCount: 5,
+												                min: 0,
+												                max: 5,
+												                value: 2
+												            }).data("kendoProgressBar");
+
+												            $("#genderInput").kendoDropDownList();
+
+												            $("#birthdayInput").kendoDatePicker();
+
+												            $("#birthdayInput").change(function (e) {
+												                var currentDate = kendo.parseDate(this.value);
+												                if (!currentDate) {
+												                    this.value = "";
+												                }
+												            });
+
+												            $(".forms input").change(function () {
+												                var completeness = 5;
+												                $(".forms input").each(function () {
+												                    if (this.value == "") {
+												                        completeness--;
+												                    }
+												                });
+
+												                pb.value(completeness);
+												                $("#completed").text((completeness * 20) + "%");
+												            });
+												        });
+												    </script>
+												</div>
+				                            </div><!-- tab1 -->
+				                            <div class="tab2">
+				                                <h3 class="hms">Primary Adress</h3>
+												<abbr title="" class="hmsX">
+													<ul class="forms">
+											            <li>
+											                <label>Address 1</label>
+											                <input type="text" name="firstName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											            <li>
+											                <label>Address 2</label>
+											                <input type="text" name="lastName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											            <li>
+											                <label>City State</label>
+											                <input type="text" name="lastName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											            
+											            <li>
+											                <label>Occupation</label>
+											                <input type="text" name="occupation" value="Software Developer" class="k-textbox" style="width: 100%;" />
+											            </li>
+											        </ul>
+
+											        <script>
+												        $(document).ready(function () {
+												            var pb = $("#profileCompleteness").kendoProgressBar({
+												                type: "chunk",
+												                chunkCount: 5,
+												                min: 0,
+												                max: 5,
+												                value: 2
+												            }).data("kendoProgressBar");
+
+												            $("#sample02").kendoDropDownList();
+
+												            $("#birthdayInput2").kendoDatePicker();
+
+												            $("#birthdayInput2").change(function (e) {
+												                var currentDate = kendo.parseDate(this.value);
+												                if (!currentDate) {
+												                    this.value = "";
+												                }
+												            });
+
+												            $(".forms input").change(function () {
+												                var completeness = 5;
+												                $(".forms input").each(function () {
+												                    if (this.value == "") {
+												                        completeness--;
+												                    }
+												                });
+
+												                pb.value(completeness);
+												                $("#completed").text((completeness * 20) + "%");
+												            });
+												        });
+												    </script>
+												</abbr>
+												<h3 class="hms">Secondary Adress</h3>
+												<abbr title="" class="hmsX">
+													<ul class="forms">
+											            <li>
+											                <label>Address 1</label>
+											                <input type="text" name="firstName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											            <li>
+											                <label>Address 2</label>
+											                <input type="text" name="lastName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											            <li>
+											                <label>Zip</label>
+											                <input type="text" name="lastName" value="" class="k-textbox" style="width: 100%;" />
+											            </li>
+											          
+											        </ul>
+												</abbr>
+				                            </div>
+				                            <div class="tab3">
+												<h3 class="hms">Notes</h3>
+												<abbr title="" class="hmsX">
+													<div  class="col-xs-12 form-horizontal">
+														<div class="form-group">
+															<textarea class="form-control" width="90%"></textarea>
+														</div>
+														  <div class="form-group">
+														    <ul class="fieldlist list-unstyled">
+												        		<li>
+																	<input type="checkbox" id="eq1" class="k-checkbox" checked="checked">
+												          			<label class="k-checkbox-label" for="eq1">Is conformed consent signed</label>
+													            </li>
+													            <li>
+																	<input type="checkbox" id="eq2" class="k-checkbox" checked="checked">
+												          			<label class="k-checkbox-label" for="eq2">Is office Policies Signed</label>
+													            </li>
+													            <li>
+																	<input type="checkbox" id="eq3" class="k-checkbox" checked="checked">
+												          			<label class="k-checkbox-label" for="eq3">Is understand of physycal</label>
+													            </li>
+													            <li>
+																	<input type="checkbox" id="eq4" class="k-checkbox" checked="checked">
+												          			<label class="k-checkbox-label" for="eq4">Exam signed</label>
+													            </li>
+													            <li>
+																	<input type="checkbox" id="eq5" class="k-checkbox" checked="checked">
+												          			<label class="k-checkbox-label" for="eq5">Expiration day</label>
+													            </li>
+													        </ul>
+														  </div>
+													</div>
+												</abbr>
+				                            </div>
+				                            
+				                        </div>
+					                </div>
+
+						            <script>
+						                $(document).ready(function() {
+						                    $("#tabstrip").kendoTabStrip({
+						                        animation:  {
+						                            open: {
+						                                effects: "fadeIn"
+						                            }
+						                        }
+						                    });
+						                });
+						            </script>
+ 
+							</section>
+						</div>
+					</div>
+				</section>
+			</article>
+		</main>
+		<aside class="noVisible">
+
+		</aside>
+		<script src="js/bootstrap.js"></script>
+		<!-- fx help -->
+		<script>
+			$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
+		<!-- menu pal -->
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
+</html>

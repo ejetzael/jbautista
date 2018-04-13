@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medical Solutions</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="access">
+	<main class="random-access-memory">
+		<article class="gameOfLove">
+			<section class="hereafter">
+				<div class=" ">
+					<adress class=" noRemind" style="visibility: hidden"><a href="#0">&nbsp;</a></adress>
+					<adress class=" noCard"><a href="dashb.html">Language</a></adress>
+				</div>
+			</section>
+			<section class="instantCrush">
+				<div class=" hdrLogo">
+					<div class=" ">
+						<img src="images/logo_helios.png" alt="">
+					</div>
+				</div>
+				<div class="text-center getLucky">
+					<strong>Log Into Your Medical Account</strong>
+				</div>
+				<div class="col-lg-12">
+					<form role="form">
+					  <div class="form-group">
+					    <label for="ejemplo_email_1">Your User</label>
+					    <input type="email" class="form-control" id="ejemplo_email_1">
+					  </div>
+					  <div class="form-group">
+					    <label for="ejemplo_password_1">Your Password</label>
+					    <input type="password" class="form-control" id="ejemplo_password_1" >
+					  </div>
+					  <button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+ 				</div>
+			</section>
+			<section class="beyond">
+				<div class=" ">
+					<adress class=" noRemind"><a href="#0">Forgot your password?</a></adress>
+					<adress class=" noCard"><a href="dashb.html">[ Change password ]</a></adress>
+				</div>
+			</section>
+		</article>
+		
+	</main>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<!-- fx input -->
+	<script src="js/motherBoard.js"></script>
+	<script>
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+	</script>
+</body>
+</html>

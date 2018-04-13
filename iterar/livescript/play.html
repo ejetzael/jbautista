@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ping pong</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content=" " />
+    <meta name="keywords" content=" " />
+    <script src=" "></script>
+    <style>
+    	canvas {
+    		border:1px solid tomato;
+    	}
+    </style>
+</head>
+<body>
+ 
+	<main class=" ">
+		<canvas id="canvas">no soporta canvas</canvas>
+	</main>
+ 	<script>
+ 		window.addEventListener('load',init);
+ 		function init(){
+ 			var canvas = document.getElementById('canvas');
+ 			var ctx = canvas.getContext('2d');
+
+ 			ctx.fillStyle = 'purple';
+ 			ctx.fillRect(20,20,50,50);
+ 			ctx.globalAlpha = 0.5;
+ 			ctx.strokeStyle = 'rgb(0,0,200)';
+ 			ctx.lineWidth = 1;
+ 			ctx.strokeRect(90,90,50,50);
+
+ 			var x =190, y =70, ancho =50, alto =62;
+ 			ctx.fillRect(x,y,ancho,alto);
+ 			ctx.strokeRect(x+20,y+10,ancho,alto);
+
+ 			ctx.arc(110,50,25,a_radianes(90),a_radianes(180),true);
+ 			ctx.fill();
+ 			
+
+ 		}
+ 		function a_radianes(grados){
+ 				return (grados * Math.PI)/180;
+ 			}
+ 	</script>
+ </body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>eperimento</title>
+</head>
+<body>
+	<div class="cd-pricing-container">
+		<div class="cd-pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
+				<label for="monthly-1">Directamente a:</label>
+				<input type="radio" name="duration-1" value="yearly" id="yearly-1">
+				<label for="yearly-1">En privado:</label>
+				<span class="cd-switch"></span>
+			</p>
+		</div> <!-- .cd-pricing-switcher -->
+		
+		<ul class="cd-pricing-list cd-bounce-invert">
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Contacto 1</h2>
+						</header> <!-- .cd-pricing-header -->
+						<div class="cd-pricing-body">
+							<form action="process-01.php" method="post" class="tipo-final">
+								<fieldset>
+									<label for="nombre">Nombre</label>
+									<input type="text" id="nombre" placeholder="Nombre y Apellido" name="nombre" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="correo">Correo</label>
+									<input type="text" id="email" placeholder="correo laboral" name="email" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="motivo">Asunto</label>
+									<input type="text" id="asunto" placeholder="Tema del mensaje" name="asunto" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="informacion">Mensaje</label>
+									<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" name="mensaje" required=""></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="boton-send" id="submit" type="submit" name="submit" value="Enviar" />
+								</fieldset>
+							</form>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<!-- <header class="cd-pricing-header">
+						</header>  --><!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<div class="membrete">
+								<img src="images/logo.jpg" alt="">
+							</div>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+				</ul> <!-- .cd-pricing-wrapper -->
+			</li>
+
+			<li class="cd-popular">
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Contacto 2</h2>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<form action="process-02.php" method="post" class="tipo-final">
+								<fieldset>
+									<label for="nombre">Nombre</label>
+									<input type="text" id="nombre" placeholder="Nombre y Apellido" name="nombre" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="correo">Correo</label>
+									<input type="text" id="email" placeholder="correo laboral" name="email" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="motivo">Asunto</label>
+									<input type="text" id="asunto" placeholder="Tema del mensaje" name="asunto" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="informacion">Mensaje</label>
+									<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" name="mensaje" required=""></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="boton-send" id="submit" type="submit" name="submit" value="Enviar" />
+								</fieldset>
+							</form>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Contacto privado</h2>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<form action="process-04.php" method="post" class="tipo-final">
+								<fieldset>
+									<label for="motivo">Asunto</label>
+									<input type="text" id="asunto" placeholder="Tema del mensaje" name="asunto" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="informacion">Mensaje</label>
+									<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" name="mensaje" required=""></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="boton-send" id="submit" type="submit" name="submit" value="Enviar" />
+								</fieldset>
+							</form>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+				</ul> <!-- .cd-pricing-wrapper -->
+			</li>
+
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Contacto 3</h2>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<form action="process-03.php" method="post" class="tipo-final">
+								<fieldset>
+									<label for="nombre">Nombre</label>
+									<input type="text" id="nombre" placeholder="Nombre y Apellido" name="nombre" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="correo">Correo</label>
+									<input type="text" id="email" placeholder="correo laboral" name="email" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="motivo">Asunto</label>
+									<input type="text" id="asunto" placeholder="Tema del mensaje" name="asunto" required="" />
+								</fieldset>
+								<fieldset>
+									<label for="informacion">Mensaje</label>
+									<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" name="mensaje" required=""></textarea>
+								</fieldset>
+								<fieldset>
+									<input class="boton-send" id="submit" type="submit" name="submit" value="Enviar" />
+								</fieldset>
+							</form>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<!-- <header class="cd-pricing-header">
+						</header>  --><!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<div class="membrete">
+								<img src="images/logo.jpg" alt="">
+							</div>
+						</div> <!-- .cd-pricing-body -->
+					</li>
+				</ul> <!-- .cd-pricing-wrapper -->
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+	</div> <!-- .cd-pricing-container -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
